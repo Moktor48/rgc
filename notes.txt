@@ -1,0 +1,3 @@
+Prep List
+2) better auth set up 
+3) DaisyUI?
