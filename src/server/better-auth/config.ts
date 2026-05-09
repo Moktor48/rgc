@@ -20,6 +20,11 @@ export const auth = betterAuth({
       clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
     },
   },
+  baseURL: {
+    allowedHosts: ["localhost:3000"],
+    protocol: "http",
+    fallback: "http://localhost",
+  },
 });
 
 export type Session = typeof auth.$Infer.Session;
