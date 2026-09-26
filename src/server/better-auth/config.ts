@@ -11,19 +11,15 @@ export const auth = betterAuth({
     enabled: true,
   },
   socialProviders: {
-    discord: {
-      clientId: process.env.DISCORD_CLIENT_ID!,
-      clientSecret: process.env.DISCORD_CLIENT_SECRET!,
-    },
     google: {
       clientId: process.env.GOOGLE_CLIENT_ID!,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
     },
   },
   baseURL: {
-    allowedHosts: ["localhost:3000"],
+    allowedHosts: ["localhost:3100"],
     protocol: "http",
-    fallback: "http://localhost",
+    fallback: "http://localhost:3100",
   },
 });
 
